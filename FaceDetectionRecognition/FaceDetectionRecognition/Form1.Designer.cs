@@ -50,6 +50,7 @@
             this.detectionRecognitionBtn.TabIndex = 3;
             this.detectionRecognitionBtn.Text = "Start Detection And Recognition";
             this.detectionRecognitionBtn.UseVisualStyleBackColor = true;
+            this.detectionRecognitionBtn.Click += new System.EventHandler(this.detectionRecognitionBtn_Click);
             // 
             // Form1
             // 
