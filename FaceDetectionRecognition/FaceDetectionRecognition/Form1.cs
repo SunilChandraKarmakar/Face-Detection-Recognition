@@ -76,7 +76,7 @@ namespace FaceDetectionRecognition
             foreach (MCvAvgComp f in facesDetectedNow[0])
             {
                 result = frame.Copy(f.rect).Convert<Gray, Byte>().Resize(100, 100, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
-                frame.Draw(f.rect, new Bgr(Color.Green), 3);
+                frame.Draw(f.rect, new Bgr(Color.Green), 2);
 
                 if (trainingImages.ToArray().Length != 0)
                 {

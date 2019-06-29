@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.cameraBox = new Emgu.CV.UI.ImageBox();
             this.detectionRecognitionBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -38,34 +37,27 @@
             this.txtCrime = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cameraBox = new Emgu.CV.UI.ImageBox();
             ((System.ComponentModel.ISupportInitialize)(this.cameraBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // cameraBox
-            // 
-            this.cameraBox.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.cameraBox.Location = new System.Drawing.Point(12, 12);
-            this.cameraBox.Name = "cameraBox";
-            this.cameraBox.Size = new System.Drawing.Size(498, 383);
-            this.cameraBox.TabIndex = 2;
-            this.cameraBox.TabStop = false;
-            // 
             // detectionRecognitionBtn
             // 
+            this.detectionRecognitionBtn.BackColor = System.Drawing.Color.Coral;
             this.detectionRecognitionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.detectionRecognitionBtn.Location = new System.Drawing.Point(114, 412);
+            this.detectionRecognitionBtn.Location = new System.Drawing.Point(75, 359);
             this.detectionRecognitionBtn.Name = "detectionRecognitionBtn";
             this.detectionRecognitionBtn.Size = new System.Drawing.Size(247, 35);
             this.detectionRecognitionBtn.TabIndex = 3;
             this.detectionRecognitionBtn.Text = "Start Detection And Recognition";
-            this.detectionRecognitionBtn.UseVisualStyleBackColor = true;
+            this.detectionRecognitionBtn.UseVisualStyleBackColor = false;
             this.detectionRecognitionBtn.Click += new System.EventHandler(this.detectionRecognitionBtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(536, 112);
+            this.label1.Location = new System.Drawing.Point(471, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 4;
@@ -74,7 +66,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(587, 109);
+            this.txtName.Location = new System.Drawing.Point(524, 90);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(247, 22);
             this.txtName.TabIndex = 5;
@@ -82,7 +74,7 @@
             // txtAge
             // 
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.Location = new System.Drawing.Point(587, 142);
+            this.txtAge.Location = new System.Drawing.Point(524, 123);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(247, 22);
             this.txtAge.TabIndex = 7;
@@ -91,7 +83,7 @@
             // 
             this.lll.AutoSize = true;
             this.lll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lll.Location = new System.Drawing.Point(536, 145);
+            this.lll.Location = new System.Drawing.Point(483, 126);
             this.lll.Name = "lll";
             this.lll.Size = new System.Drawing.Size(33, 16);
             this.lll.TabIndex = 6;
@@ -100,7 +92,7 @@
             // txtCrime
             // 
             this.txtCrime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCrime.Location = new System.Drawing.Point(587, 176);
+            this.txtCrime.Location = new System.Drawing.Point(524, 157);
             this.txtCrime.Multiline = true;
             this.txtCrime.Name = "txtCrime";
             this.txtCrime.Size = new System.Drawing.Size(247, 81);
@@ -110,7 +102,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(536, 208);
+            this.label2.Location = new System.Drawing.Point(473, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 16);
             this.label2.TabIndex = 8;
@@ -118,19 +110,33 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(626, 270);
+            this.btnSave.Location = new System.Drawing.Point(563, 251);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(166, 29);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save Information";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // cameraBox
+            // 
+            this.cameraBox.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.cameraBox.BackgroundImage = global::FaceDetectionRecognition.Properties.Resources._8photography_tips___3;
+            this.cameraBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cameraBox.InitialImage = null;
+            this.cameraBox.Location = new System.Drawing.Point(10, 17);
+            this.cameraBox.Name = "cameraBox";
+            this.cameraBox.Size = new System.Drawing.Size(436, 318);
+            this.cameraBox.TabIndex = 2;
+            this.cameraBox.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 467);
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.ClientSize = new System.Drawing.Size(793, 413);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtCrime);
             this.Controls.Add(this.label2);

@@ -85,6 +85,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +102,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="haarcascade_frontalface_default.xml" />
+    <None Include="Resources\8photography_tips - 3.png" />
+    <None Include="Resources\8photography_tips - 2.png" />
+    <None Include="Resources\Crop_tips.jpg" />
+    <None Include="Resources\8photography_tips.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
