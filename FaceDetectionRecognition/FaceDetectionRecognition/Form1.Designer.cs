@@ -118,6 +118,7 @@
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save Information";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cameraBox
             // 
@@ -149,7 +150,7 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Face Detection Recognition";
+            this.Text = "Face Detection Recognition";     
             ((System.ComponentModel.ISupportInitialize)(this.cameraBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
